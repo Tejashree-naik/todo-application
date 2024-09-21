@@ -1,8 +1,16 @@
-import logo from "./logo.svg";
+//import { useState } from "react";
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  //const [tasks, setTasks] = useState([]);
+
+  return (
+    <>
+      <div>header</div>
+      <div style={{ flex: 1 }}>Body</div>
+      <div>footerr</div>
+    </>
+  );
 }
 
 export default App;

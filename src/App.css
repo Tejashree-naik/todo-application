@@ -5,6 +5,8 @@
   margin: auto;
   height: 100%;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 body {
   height: 100%;
