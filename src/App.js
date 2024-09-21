@@ -5,11 +5,11 @@ function App() {
   //const [tasks, setTasks] = useState([]);
 
   return (
-    <>
+    <div className="App">
       <div>header</div>
-      <div style={{ flex: 1 }}>Body</div>
-      <div>footerr</div>
-    </>
+      <div style={{ flex: 1, height: "100px" }}>Body</div>
+      <div>footer</div>
+    </div>
   );
 }
 
