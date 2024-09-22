@@ -30,6 +30,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 style={{ textAlign: "center" }}>Todoist Dashboard</h1>
       {/* Header with buttons */}
       <div className="App-header">
         <button onClick={() => setActiveTab("inbox")}>Inbox</button>
