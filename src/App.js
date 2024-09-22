@@ -34,9 +34,7 @@ function App() {
       <div className="App-header">
         <button onClick={() => setActiveTab("inbox")}>Inbox</button>
         <button onClick={() => setActiveTab("completed")}>Completed</button>
-        <button onClick={() => setActiveTab("notCompleted")}>
-          Not Completed
-        </button>
+        <button onClick={() => setActiveTab("notCompleted")}>Pending</button>
       </div>
 
       {/* Body for tasks */}

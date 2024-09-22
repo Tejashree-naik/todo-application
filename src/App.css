@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
   max-width: 400px; /* Increase the max-width */
   border: 1px solid red;
   margin: auto;
@@ -15,4 +15,56 @@
 .html {
   height: 100%;
   background-color: grey;
+}
+.App-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: lightcyan;
+  color: white;
+  border-radius: 8px;
+}
+
+.App-header button {
+  background-color: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.App-header button:hover {
+  background-color: #52a6c4;
+}
+
+.App-body {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.task-item {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+.App-footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: lightcyan;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.App-footer p {
+  margin: 0;
+}
+.App-body ul {
+  padding: 0;
+  list-style-type: none;
 }
