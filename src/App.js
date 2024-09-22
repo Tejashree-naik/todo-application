@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div>header</div>
-      <div style={{ flex: 1, height: "100px" }}>Body</div>
+      <div style={{ flex: 1 }}>Body</div>
       <div>footer</div>
     </div>
   );
