@@ -2,21 +2,30 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [tasks, setTasks] = useState([]); // Holds all tasks
+  // Holds predefined tasks with ids and names
+  const [tasks, setTasks] = useState([
+    { id: 1, name: "Shopping", completed: false },
+    { id: 2, name: "Cooking", completed: false },
+    { id: 3, name: "Watching movies", completed: false },
+  ]);
+
   const [activeTab, setActiveTab] = useState("inbox"); // Tracks the selected tab
 
   // Function to add a new task
   const addTask = () => {
     const taskText = prompt("Enter a new task:");
     if (taskText) {
-      setTasks([...tasks, { text: taskText, completed: false }]);
+      setTasks([
+        ...tasks,
+        { id: tasks.length + 1, name: taskText, completed: false },
+      ]);
     }
   };
 
   // Toggle task completion
-  const toggleTask = (index) => {
-    const updatedTasks = tasks.map((task, i) =>
-      i === index ? { ...task, completed: !task.completed } : task
+  const toggleTask = (id) => {
+    const updatedTasks = tasks.map((task) =>
+      task.id === id ? { ...task, completed: !task.completed } : task
     );
     setTasks(updatedTasks);
   };
@@ -41,14 +50,14 @@ function App() {
       {/* Body for tasks */}
       <div style={{ flex: 1 }}>
         <ul>
-          {filteredTasks.map((task, index) => (
-            <li key={index}>
+          {filteredTasks.map((task) => (
+            <li key={task.id}>
               <input
                 type="checkbox"
                 checked={task.completed}
-                onChange={() => toggleTask(index)}
+                onChange={() => toggleTask(task.id)}
               />
-              {task.text}
+              {task.name}
             </li>
           ))}
         </ul>

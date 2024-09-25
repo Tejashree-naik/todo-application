@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
-  background-color: lightcyan;
+  background-color: white;
   color: white;
   border-radius: 8px;
 }
@@ -54,7 +54,7 @@
 .App-footer {
   margin-top: 20px;
   padding: 10px;
-  background-color: lightcyan;
+  background-color: white;
   color: white;
   border-radius: 8px;
   display: flex;
