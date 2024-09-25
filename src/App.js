@@ -30,6 +30,12 @@ function App() {
     setTasks(updatedTasks);
   };
 
+  // Function to delete a task
+  const deleteTask = (id) => {
+    const updatedTasks = tasks.filter((task) => task.id !== id);
+    setTasks(updatedTasks);
+  };
+
   // Filter tasks based on the active tab
   const filteredTasks = tasks.filter((task) => {
     if (activeTab === "completed") return task.completed;
@@ -58,6 +64,8 @@ function App() {
                 onChange={() => toggleTask(task.id)}
               />
               {task.name}
+              {/* Delete button */}
+              <button onClick={() => deleteTask(task.id)}>Delete</button>
             </li>
           ))}
         </ul>
