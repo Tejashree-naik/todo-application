@@ -65,7 +65,12 @@ function App() {
               />
               {task.name}
               {/* Delete button */}
-              <button onClick={() => deleteTask(task.id)}>Delete</button>
+              <button
+                className="delete-button"
+                onClick={() => deleteTask(task.id)}
+              >
+                Delete
+              </button>
             </li>
           ))}
         </ul>
