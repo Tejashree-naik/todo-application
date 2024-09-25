@@ -78,7 +78,9 @@ function App() {
 
       {/* Footer with Add Task button (always visible in footer) */}
       <div className="App-footer">
-        <button onClick={addTask}>Add Task</button>
+        <button className="add-button" onClick={addTask}>
+          Add Task
+        </button>
       </div>
     </div>
   );
